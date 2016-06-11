@@ -4,22 +4,19 @@ Example of template for Android Studio, to create a set of files for MVP functio
 Please read the blog post first as this is just an example implementation of the concepts described in the blog post:
 https://riggaroo.co.za/custom-file-template-group-android-studiointellij/ 
 
-You will need to place the following folder in your Android Studio installation:
-```
-/Applications/Android Studio.app/Contents/plugins/android/lib/templates/other/
-```
-# NOTE: This is just an example usage of file templates, I am not advocating this is the perfect solution for using MVP in Android. This sample is merely to show how you can create a set of files based on a template of files. 
+
+# Important Note: This is just an example usage of file templates, I am not advocating this is the perfect solution for using MVP in Android. This sample is merely to show how you can create a set of files based on a template of files. 
 
 In order to use this in your project. 
 
-1. Create the following files in your project:
+* Create the following files in your project:
 
-MvpView.java
+**MvpView.java**
   ```
   public interface MvpView {
   }
   ```
-MvpPresenter.java
+**MvpPresenter.java**
 
   ```
   public interface MvpPresenter<V extends MvpView> {
@@ -29,7 +26,7 @@ MvpPresenter.java
       void detachView();
   }
   ```
-BasePresenter.java
+**BasePresenter.java**
 ```
   /**
    * Base class that implements the Presenter interface and provides a base implementation for
@@ -79,10 +76,15 @@ BasePresenter.java
   }
 ```
 
-2. You will need to change the package name of the import statement  in the template files, as when you generate this template it will generate different import statements. You need to change it in the following places:
+* You will need to change the package name of the import statement  in the template files, as when you generate this template it will generate different import statements. You need to change it in the following places:
   * root/src/app_package/Contract.java.ftl, 
-  * root/src/app_package/MvpView.java.ftl 
+  * root/src/app_package/MvpView.java.ftl
   * root/src/pp_package/Presenter.java.ftl 
  
-    Change the import statements in each of those files, to correspond with your package name.
+  Change the import statements in each of those files, to correspond with your package name.
 
+* Then place the folder from this projected into the following location in your Android Studio Installation:
+```
+/Applications/Android Studio.app/Contents/plugins/android/lib/templates/other/
+```
+* Restart Android Studio, and then when you right click on a folder to create a new file, you will be able to see the new option to create a MVP Function.
