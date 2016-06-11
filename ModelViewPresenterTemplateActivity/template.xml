@@ -1,0 +1,18 @@
+<template format="4"
+		revision="1"
+		name="MVP Template Activity"
+		description="Creates a new MVP classes - Presenter, View and Contract between the two">
+
+	<category value="Other"/>
+
+	<parameter id="className"
+		name="Functionality Name"
+		type="string"
+		constraints="class|unique|nonempty"
+		default="MvpFunction"
+		help="The name of the functionality that requires MVP views"/>
+
+	<globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
