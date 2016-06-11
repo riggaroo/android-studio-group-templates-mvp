@@ -1,7 +1,7 @@
 ## android-studio-group-templates-mvp
 Example of template for Android Studio, to create a set of files for MVP functionality.
 
-Please read the blog post first as this is just an example implementation of the concepts described in the blog post:
+**Please read the blog post first** as this is just an example implementation of the concepts described in the blog post:
 https://riggaroo.co.za/custom-file-template-group-android-studiointellij/ 
 
 
