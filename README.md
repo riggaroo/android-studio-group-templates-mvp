@@ -11,6 +11,7 @@ You will need to place the following folder in your Android Studio installation:
 # NOTE: This is just an example usage of file templates, I am not advocating this is the perfect solution for using MVP in Android. This sample is merely to show how you can create a set of files based on a template of files. 
 
 In order to use this in your project. 
+
 1. Create the following files in your project:
 
 MvpView.java
@@ -77,10 +78,11 @@ BasePresenter.java
       }
   }
 ```
+
 2. You will need to change the package name of the import statement  in the template files, as when you generate this template it will generate different import statements. You need to change it in the following places:
-- root/src/app_package/Contract.java.ftl, 
-- root/src/app_package/MvpView.java.ftl 
-- root/src/pp_package/Presenter.java.ftl 
+  * root/src/app_package/Contract.java.ftl, 
+  * root/src/app_package/MvpView.java.ftl 
+  * root/src/pp_package/Presenter.java.ftl 
  
     Change the import statements in each of those files, to correspond with your package name.
 
