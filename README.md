@@ -83,8 +83,9 @@ In order to use this in your project.
  
   Change the import statements in each of those files, to correspond with your package name.
 
-* Then place the folder from this projected into the following location in your Android Studio Installation:
+* Then place the folder from this project into your '.android/' of your system:
 ```
-/Applications/Android Studio.app/Contents/plugins/android/lib/templates/other/
+~/.android/templates/other/
 ```
+
 * Restart Android Studio, and then when you right click on a folder to create a new file, you will be able to see the new option to create a MVP Function.
